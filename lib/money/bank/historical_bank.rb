@@ -1,4 +1,6 @@
 # encoding: UTF-8
+require 'money/bank/open_exchange_rates_loader'
+
 class Money
   module Bank
     class InvalidCache < StandardError ; end
