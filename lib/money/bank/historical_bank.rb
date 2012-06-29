@@ -1,9 +1,4 @@
 # encoding: UTF-8
-require 'money'
-require 'date'
-
-require File.expand_path(File.dirname(__FILE__)) + "/open_exchange_rates_loader"
-
 class Money
   module Bank
     class InvalidCache < StandardError ; end
