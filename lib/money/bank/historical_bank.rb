@@ -243,7 +243,13 @@ class Money
       # @example
       #   rate_key_for("USD", "CAD") #=> "USD_TO_CAD"
       def rate_key_for(from, to)
-        "#{Currency.wrap(from).iso_code}_TO_#{Currency.wrap(to).iso_code}".upcase
+        if from.is_a?(Currency)
+          from = from.iso_code
+        end
+        if to.is_a?(Currency)
+          to = to.iso_code
+        end
+        "#{from}_TO_#{to}".upcase
       end
 
       # Set the rate for the given currency pair at a given date.
