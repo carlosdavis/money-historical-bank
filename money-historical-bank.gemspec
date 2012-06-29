@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary = "A gem that offers exchange rates varying in time."
 
   s.extra_rdoc_files = %w(README.markdown)
-  s.files = Dir["LICENSE", "README.markdown", "Gemfile", "lib/*.rb", "lib/**/*.rb", 'test/**/*']
+  s.files = Dir["LICENSE", "README.markdown", "Gemfile", "lib/**/*.rb", 'test/**/*']
   s.test_files = Dir.glob("test/*_test.rb")
 
   s.rubygems_version = %q{1.3.7}
