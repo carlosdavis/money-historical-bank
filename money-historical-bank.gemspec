@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name = "money-historical-bank"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
   s.date = Time.now.utc.strftime("%Y-%m-%d")
-  s.homepage = "http://github.com/coutud/#{s.name}"
-  s.authors = "Damien Couture"
-  s.email = "wam@atwam.com"
+  s.homepage = "http://github.com/carlosdavis/#{s.name}"
+  s.authors = ["Damien Couture", "Carlos d'Avis"]
+  s.email = "carlos@scope5.com"
   s.description = "A gem that provides rates for the money gem. Able to handle history (rates varying in time), and auto download rates from open-exchange-rates. Highly inspired by money-open-exchange-rates gem."
   s.summary = "A gem that offers exchange rates varying in time."
   s.extra_rdoc_files = %w(README.markdown)
