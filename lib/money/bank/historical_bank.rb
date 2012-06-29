@@ -1,5 +1,8 @@
 # encoding: UTF-8
-require 'money/bank/open_exchange_rates_loader'
+require 'money'
+require 'date'
+
+require File.expand_path(File.dirname(__FILE__)) + "/open_exchange_rates_loader"
 
 class Money
   module Bank
